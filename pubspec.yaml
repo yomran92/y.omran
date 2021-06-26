@@ -1,0 +1,214 @@
+name: asir_mobile
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 2.0.0+2
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  flutter_svg: ^0.21.0+1
+  shared_preferences: ^0.5.3+4 
+  google_fonts: ^0.3.5
+  fluttertoast: ^3.1.0
+  carousel_slider: ^3.0.0
+  adobe_xd: ^2.0.0+1
+  http: 
+
+  cached_network_image: ^2.0.0 
+  share: 0.6.5+2	
+  #flutter_launch: ^0.2.0
+  social_share: ^2.0.3	
+  smooth_star_rating: ^1.1.1
+  flutter_rating_bar: ^4.0.0
+  image_picker: ^0.6.7+12
+  url_launcher: ^5.7.6
+  dio: ^3.0.10
+  retrofit_generator: any
+  flutter_plugin_android_lifecycle: ^1.0.11
+  change_app_package_name: ^1.0.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.9.0
+flutter_icons:
+  android: true
+  image_path_android: "assets/image/splash_logo1.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - assets/image/
+     - assets/image/profile_background.jpg
+     - assets/image/profile_background.png
+     - assets/image/home_page.jpeg
+     - assets/image/welcom1_background.jpg
+     - assets/image/welcom2_background.jpeg
+     - assets/image/splash_image.png
+     - assets/image/welcome1_rect.png
+     - assets/image/homePage.png
+     - assets/image/splash.jpg
+     - assets/image/splash_logo.png
+     - assets/image/splash_logo1.png
+     - assets/image/request.jpg
+     - assets/place/tnoma/place/
+     - assets/place/tnoma/hotel/
+     - assets/place/tnoma/resort/
+     - assets/place/tnoma/historicVillage/
+     - assets/place/soda/Museum/
+     - assets/place/soda/place/
+     - assets/place/soda/resort/
+     - assets/place/soda/Park/
+     - assets/place/abha/Museum/
+     - assets/place/abha/hotel/
+     - assets/place/abha/resort/
+     - assets/place/abha/place/
+     - assets/place/abha/resort/ArtStreet/
+     - assets/place/abha/resort/AirportGarden/
+     - assets/place/abha/resort/AbuKheyalPark/
+     - assets/place/abha/hotel/theView/
+     - assets/place/abha/hotel/AzadHotel/
+     - assets/place/abha/hotel/WasaifAbha/
+     - assets/place/abha/Museum/AlMuftaha/
+     - assets/place/abha/Museum/CivilizationsMuseum/
+     - assets/place/soda/Park/AlSoudahNationalPark/
+     - assets/place/soda/resort/AlSodaResort/
+     - assets/place/soda/Museum/AljhaliMuseum/
+     - assets/place/tnoma/hotel/hotelVillage/
+     - assets/place/tnoma/hotel/hotelAram/
+     - assets/place/tnoma/resort/resortsharf/
+     - assets/place/tnoma/resort/resortMehfar/
+     - assets/place/tnoma/historicVillage/
+
+
+
+
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: Arial
+      fonts:
+        - asset: assets/font/ARLRDBD.ttf
+
+    - family: Sans
+      fonts:
+        - asset: assets/font/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/font/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/font/OpenSans-Semibold.ttf
+          weight: 600
+        - asset: assets/font/OpenSans-Regular.ttf
+          weight: 500
+        - asset: assets/font/OpenSans-Light.ttf
+          weight: 400
+
+    - family: Popins
+      fonts:
+        - asset: assets/font/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/font/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/font/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/font/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/font/Poppins-Bold.ttf
+          weight: 700
+    - family: CustomIcons
+      fonts:
+        - asset: assets/image/CustomIcons.ttf
+    - family : Gotik
+      fonts:
+        - asset: assets/font/GOTHIC.TTF
+          weight: 400
+        - asset: assets/font/GOTHICB.TTF
+          weight: 600
+    - family : Sofia
+      fonts:
+        - asset: assets/font/Sofia/SofiaProBold.otf
+          weight: 900
+        - asset: assets/font/Sofia/SofiaProSemiBold.otf
+          weight: 800
+        - asset: assets/font/Sofia/SofiaProMedium.otf
+          weight: 700
+        - asset: assets/font/Sofia/SofiaProRegular.otf
+          weight: 600
+        - asset: assets/font/Sofia/SofiaProLight.otf
+          weight: 500
+        - asset: assets/font/Sofia/SofiaProExtraLight.otf
+          weight: 400
+        - asset: assets/font/Sofia/SofiaProUltraLight.otf
+          weight: 300
+    - family : category
+      fonts:
+        - asset: assets/custom_icon/ic_category.ttf
+    - family : file
+      fonts:
+        - asset: assets/custom_icon/ic_file.ttf
+    - family : hearth
+      fonts:
+        - asset: assets/custom_icon/ic_hearth.ttf
+    - family : home
+      fonts:
+        - asset: assets/custom_icon/ic_home.ttf
+    - family : profile
+      fonts:
+        - asset: assets/custom_icon/ic_profile.ttf
